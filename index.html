@@ -18,17 +18,21 @@
     </header>
 
     <main id="home" class="page">
-      <section class="intro">
+      <section class="intro section-card">
+        <aside class="portrait-panel" aria-label="Profile photo">
+          <img src="assets/img/profile.jpg" alt="Portrait of Jingwen Zhang">
+        </aside>
+
         <div class="intro-text">
           <h1>Jingwen Zhang</h1>
 
           <dl class="contact-list">
             <div>
-              <dt>学校：</dt>
+              <dt>School:</dt>
               <dd>China University of Mining and Technology</dd>
             </div>
             <div>
-              <dt>专业：</dt>
+              <dt>Major:</dt>
               <dd>Computer Science and Technology, third-year undergraduate student</dd>
             </div>
             <div>
@@ -48,14 +52,17 @@
               <dd>G.E.M.</dd>
             </div>
           </dl>
-        </div>
 
-        <aside class="portrait-panel" aria-label="Profile photo">
-          <img src="assets/img/profile.jpg" alt="Portrait of Jingwen Zhang">
-        </aside>
+          <div class="tags" aria-label="Research tags">
+            <span>Data Mining</span>
+            <span>Human-Computer Interaction</span>
+            <span>Graph Neural Networks</span>
+            <span>Interpretability</span>
+          </div>
+        </div>
       </section>
 
-      <section class="notice">
+      <section class="section-card about-card">
         <h2>About Me</h2>
         <p>
           I am currently a third-year undergraduate student. I am interested in
@@ -84,7 +91,7 @@
         </p>
       </section>
 
-      <section id="research" class="section">
+      <section id="research" class="section section-card">
         <h2>Research Interests</h2>
         <ul class="compact-list">
           <li>Graph neural networks for anomaly detection.</li>
@@ -93,7 +100,7 @@
         </ul>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section-card">
         <h2>Projects</h2>
         <ol class="project-list">
           <li>
@@ -123,7 +130,6 @@
           </li>
         </ol>
       </section>
-
     </main>
 
     <footer class="site-footer">
