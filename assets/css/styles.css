@@ -1,14 +1,20 @@
 :root {
-  --bg: #f6f8fa;
-  --header: #eaf4fb;
+  --bg: #dff2fb;
+  --header: #dff2fb;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #5f6b7a;
-  --line: #e5e7eb;
+  --line: #d6dee8;
   --accent: #2563eb;
   --accent-strong: #1d4ed8;
-  --about-bg: #fffbf0;
-  --about-line: #fde68a;
+  --intro-bg: #edf8ef;
+  --intro-line: #b9dfc2;
+  --about-bg: #fff7df;
+  --about-line: #f3d58a;
+  --research-bg: #f1efff;
+  --research-line: #d6cdfa;
+  --projects-bg: #eef8ff;
+  --projects-line: #b9ddf2;
   --tag-bg: #eef2ff;
   --tag-text: #3730a3;
   --max-width: 960px;
@@ -46,26 +52,20 @@ a:focus {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid var(--line);
-  background: rgba(234, 244, 251, 0.94);
-  backdrop-filter: blur(10px);
+  border-bottom: 0;
+  background: rgba(223, 242, 251, 0.82);
+  backdrop-filter: blur(8px);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
   max-width: var(--max-width);
-  min-height: 60px;
+  min-height: 48px;
   margin: 0 auto;
   padding: 0 24px;
-}
-
-.brand {
-  color: var(--text);
-  font-weight: 700;
-  white-space: nowrap;
 }
 
 .nav-links {
@@ -93,7 +93,7 @@ a:focus {
 .section-card {
   margin-top: 32px;
   padding: 28px 32px;
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   border-radius: 8px;
   background: var(--card);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
@@ -118,7 +118,7 @@ h2 {
 
 h1 {
   margin-bottom: 16px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 800;
 }
 
@@ -140,7 +140,7 @@ p {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
-  border: 1px solid var(--line);
+  border: 2px solid rgba(146, 174, 196, 0.45);
   border-radius: 8px;
   background: #f9fafb;
   object-fit: cover;
@@ -171,7 +171,7 @@ p {
 
 .tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 6px;
   margin-top: 20px;
 }
@@ -184,11 +184,27 @@ p {
   color: var(--tag-text);
   font-size: 14px;
   line-height: 1.4;
+  white-space: nowrap;
+}
+
+.intro-card {
+  border-color: var(--intro-line);
+  background: var(--intro-bg);
 }
 
 .about-card {
   border-color: var(--about-line);
   background: var(--about-bg);
+}
+
+.research-card {
+  border-color: var(--research-line);
+  background: var(--research-bg);
+}
+
+.projects-card {
+  border-color: var(--projects-line);
+  background: var(--projects-bg);
 }
 
 .section {
@@ -285,7 +301,7 @@ p {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   h2 {
@@ -295,5 +311,9 @@ p {
   .contact-list div {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .tags {
+    flex-wrap: wrap;
   }
 }
