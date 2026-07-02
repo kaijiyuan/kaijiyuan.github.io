@@ -162,6 +162,7 @@ p {
 .contact-list dt {
   color: var(--text);
   font-weight: 700;
+  text-align: right;
 }
 
 .contact-list dd {
