@@ -1,0 +1,300 @@
+:root {
+  --bg: #ffffff;
+  --text: #202124;
+  --muted: #5f6368;
+  --line: #dfe3e8;
+  --accent: #0b6bcb;
+  --accent-strong: #094f96;
+  --soft: #f6f8fa;
+  --notice: #fff7e6;
+  --notice-line: #f0c36d;
+  --max-width: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--max-width);
+  min-height: 58px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 15px;
+}
+
+.nav-links a {
+  color: var(--muted);
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--text);
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 44px 24px 32px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 40px;
+  align-items: start;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.25;
+  color: #111827;
+  letter-spacing: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 650;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.role,
+.affiliation {
+  margin: 0;
+  color: var(--muted);
+}
+
+.affiliation:last-of-type {
+  margin-bottom: 24px;
+}
+
+.portrait-panel {
+  margin: 6px 0 0;
+}
+
+.portrait-panel img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--soft);
+  object-fit: cover;
+}
+
+.contact-list {
+  display: grid;
+  gap: 4px;
+  margin: 20px 0 0;
+}
+
+.contact-list div {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.contact-list dt {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.contact-list dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+.notice,
+.section {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.notice {
+  padding: 18px 20px;
+  border: 1px solid var(--notice-line);
+  border-radius: 6px;
+  background: var(--notice);
+}
+
+.notice h2 {
+  font-size: 20px;
+}
+
+.notice p:last-child,
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.compact-list,
+.news-list {
+  margin: 0;
+  padding-left: 21px;
+}
+
+.compact-list li,
+.news-list li {
+  margin: 5px 0;
+}
+
+.publication-list {
+  margin: 0;
+  padding-left: 23px;
+}
+
+.publication-list li {
+  margin-bottom: 16px;
+}
+
+.paper-title,
+.paper-authors,
+.paper-venue {
+  display: block;
+}
+
+.paper-title {
+  font-weight: 650;
+}
+
+.paper-authors,
+.paper-venue,
+.news-list time {
+  color: var(--muted);
+}
+
+.publication-list a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.news-list time {
+  display: inline-block;
+  width: 82px;
+}
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 24px 42px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .page {
+    padding-top: 30px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portrait-panel {
+    max-width: 240px;
+    order: -1;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .contact-list div,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-list div {
+    gap: 0;
+  }
+
+  .news-list time {
+    display: block;
+    width: auto;
+  }
+}
