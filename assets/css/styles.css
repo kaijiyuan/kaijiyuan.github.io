@@ -17,7 +17,7 @@
   --projects-line: #b9ddf2;
   --tag-bg: #eef2ff;
   --tag-text: #3730a3;
-  --max-width: 960px;
+  --max-width: 1120px;
 }
 
 * {
@@ -87,12 +87,12 @@ a:focus {
 .page {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 48px 24px 32px;
+  padding: 44px 28px 32px;
 }
 
 .section-card {
   margin-top: 32px;
-  padding: 28px 32px;
+  padding: 30px 40px;
   border: 2px solid var(--line);
   border-radius: 8px;
   background: var(--card);
@@ -101,8 +101,8 @@ a:focus {
 
 .intro {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 34px;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 46px;
   align-items: center;
   margin-top: 0;
 }
@@ -148,15 +148,15 @@ p {
 
 .contact-list {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   margin: 0;
   font-size: 17px;
 }
 
 .contact-list div {
   display: grid;
-  grid-template-columns: 94px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 12px;
 }
 
 .contact-list dt {
