@@ -104,8 +104,15 @@ h2 {
 
 h1 {
   margin-bottom: 12px;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 700;
+}
+
+h1 span {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 h2 {
@@ -198,12 +205,14 @@ p {
   margin: 5px 0;
 }
 
-.publication-list {
+.publication-list,
+.project-list {
   margin: 0;
   padding-left: 23px;
 }
 
-.publication-list li {
+.publication-list li,
+.project-list li {
   margin-bottom: 16px;
 }
 
@@ -223,7 +232,8 @@ p {
   color: var(--muted);
 }
 
-.publication-list a {
+.publication-list a,
+.project-list a {
   display: inline-block;
   margin-right: 10px;
   font-size: 15px;
@@ -281,7 +291,13 @@ p {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  h1 span {
+    display: block;
+    margin-left: 0;
+    margin-top: 4px;
   }
 
   .contact-list div,

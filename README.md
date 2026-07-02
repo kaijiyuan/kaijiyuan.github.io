@@ -1,6 +1,6 @@
 # Academic Homepage for GitHub Pages
 
-This is a lightweight static academic homepage inspired by
+This is Jingwen Zhang's lightweight static academic homepage, inspired by
 [al-folio](https://github.com/alshedivat/al-folio) and laid out similarly to
 Xiao Li's academic homepage.
 
