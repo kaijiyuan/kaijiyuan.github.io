@@ -155,7 +155,7 @@ p {
 
 .contact-list div {
   display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-columns: 148px minmax(0, 1fr);
   gap: 12px;
 }
 
@@ -169,11 +169,24 @@ p {
   color: var(--muted);
 }
 
+.tag-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tag-title {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .tags {
   display: flex;
   flex-wrap: nowrap;
   gap: 6px;
-  margin-top: 20px;
 }
 
 .tags span {
@@ -315,5 +328,11 @@ p {
 
   .tags {
     flex-wrap: wrap;
+  }
+
+  .tag-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
   }
 }
